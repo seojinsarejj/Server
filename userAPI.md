@@ -41,7 +41,8 @@ SUCCESS {"code": 200, {
      iconIndex: Int,
      id: String,
      loginUserId: Integer,
-     myCalendarId: Integer
+     myCalendarId: Integer,
+     isAdmin: Boolean
     }}
 ```
 ```
@@ -55,6 +56,11 @@ POST/logout
 ```
  - Request
 ```
+- header
+{
+    loginUserId: Integer
+}
+- body
 {
    
 }
