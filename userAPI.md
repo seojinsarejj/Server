@@ -5,23 +5,22 @@
 ```
 POST/join
 ```
-- STUDENT
-    - Request
-    ```
-    {
-        id: String,
-        pw: String,
-        classOf: Int
-    }
-    ```
-    - Response
-    ```
-    SUCCESS {"code": 200, message: "Success"}
-    ```
-    ```
-    FAIL {"code": 500, message:"FAIL"}
-    
-    ```
+- Request
+```
+{
+    id: String,
+    pw: String,
+    classOf: Int
+}
+```
+- Response
+```
+SUCCESS {"code": 200, message: "Success"}
+```
+```
+FAIL {"code": 500, message:"FAIL"}
+
+```
 로그인
 -
 ```

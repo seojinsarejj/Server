@@ -10,18 +10,20 @@ PUT/timetable
     loginUserId: Integer
 }
 - body
-{
-    "index": Int,
-    "subject": String,
-    "teacher": String
-}
+[{
+    "subject": "string",
+    "teacher": "string",
+    "timeTableIndex": 0
+}]
 ```
 - Response
 ```
-SUCCESS {"code": 200, "message": "Success", "timetables":[{
-    "index": Int,
-    "subject": String
-}]}
+SUCCESS {"code": 200, [{
+    "subject": "string",
+    "teacher": "string",
+    "timeTableIndex": Integer
+  }]
+}
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
@@ -39,10 +41,12 @@ GET/timetable/
 ```
 - Response
 ```
-SUCCESS {"code": 200, "message": "Success", "timetables":[{
-    "index": Int,
-    "subject": String
-}]}
+SUCCESS {"code": 200, [{
+    "subject": "string",
+    "teacher": "string",
+    "timeTableIndex": Integer
+  }]
+}
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
