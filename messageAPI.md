@@ -1,3 +1,5 @@
+메세지 읽기
+-
 ```
 GET/message
 ```
@@ -5,24 +7,20 @@ GET/message
  ```
  - header 
  {
-     loginUserId:
-     Integer
+    loginUserId:Integer
  }
 
 ```
   - Respones
 ```
-SUCCESS {"code: 200,
-"message": "Success",
-[
-  {
-    "eventId": 0,
-    "haveDialog": true,
-    "messageId": 0,
-    "roomId": 0,
-    "sendDateNow": "2019-11-21T06:38:51.247Z",
+SUCCESS {"code: 200, [{
+    "eventId": Integer,
+    "haveDialog": Boolean,
+    "messageId": Integer,
+    "roomId": Integer,
+    "sendDateNow": "string",
     "toUserId": "string",
-    "type": 0
+    "type": Int
   }
 ]}
 ```
@@ -69,17 +67,14 @@ POST/message/{messageId}
   ```
    - Response
   ```
-  SUCCESS {"code":
-  200, "message":
-  "Ok",
-  [{
-    "eventId": 0,
-    "haveDialog": true,
-    "messageId": 0,
-    "roomId": 0,
-    "sendDateNow": "2019-11-21T07:03:49.495Z",
+  SUCCESS {"code":200, [{
+    "eventId": Integer,
+    "haveDialog": Boolean,
+    "messageId": Integer,
+    "roomId": Integer,
+    "sendDateNow": "string",
     "toUserId": "string",
-    "type": 0
+    "type": Int
   }]}
   ```
   ```

@@ -1,3 +1,5 @@
+마이페이지 읽기
+-
 ```
 GET/myPage
 ```
@@ -5,21 +7,19 @@ GET/myPage
  ```
  - header
  {
-     loginUserId:
-     Integer
+     loginUserId: Integer
  }
  ```
  - Response
  ```
- SUCCESS{"code:200",
- [{
-    "eventId": 0,
-    "haveDialog": true,
-    "messageId": 0,
-    "roomId": 0,
-    "sendDateNow": "2019-11-21T07:40:39.544Z",
+ SUCCESS{"code:200", [{
+    "eventId": Integer,
+    "haveDialog": Boolean,
+    "messageId": Integer,
+    "roomId": Integer,
+    "sendDateNow": "string",
     "toUserId": "string",
-    "type": 0
+    "type": Int
   }
 ]}
 ```
@@ -28,33 +28,30 @@ FAIL {"code" : 500, "message":"FAIL"}
 FAIL {"code": 403,"message": "Forbidden"}
 
 ```
+아이콘 수정하기
+-
+```
 PUT/myPage
 ```
  - Request
 ```
 -header
 {
-    loginUserId:
-    Integer
+    loginUserId: Integer
 }
 -body
 {
-  "admin": true,
-  "classOf": 0,
-  "iconIndex": 0,
-  "id": "string",
-  "myCalendarId": 0,
-  "pw": "string"
+  "iconIndex": Int,
 }
 ```
  - Response
 ```
 SUCCESS {"code" : 200, {
-  "admin": true,
-  "classOf": 0,
-  "iconIndex": 0,
+  "admin": Boolean,
+  "classOf": Int,
+  "iconIndex": Int,
   "id": "string",
-  "myCalendarId": 0,
+  "myCalendarId": Integer,
   "pw": "string"
 }}
 
