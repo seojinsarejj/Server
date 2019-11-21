@@ -13,7 +13,7 @@ PUT/timetable
 [{
     "subject": "string",
     "teacher": "string",
-    "timeTableIndex": 0
+    "timeTableIndex": Integer
 }]
 ```
 - Response
