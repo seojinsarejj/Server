@@ -30,6 +30,8 @@ SUCCESS {"code": 200, [{
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```
 공지사항 보기
 -
@@ -60,6 +62,7 @@ SUCCESS {"code": 200, [{
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```
 공지사항 상세보기
 -
@@ -89,6 +92,7 @@ SUCCESS {"code": 200, "message": "Success", {
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 FAIL {"code": 404, message:"Not found"}
 ```
 공지사항 삭제
@@ -113,5 +117,6 @@ SUCCESS {"code": 200, "message": "ok"}
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 FAIL {"code": 404, message:"Not found"}
 ```

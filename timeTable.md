@@ -27,6 +27,7 @@ SUCCESS {"code": 200, [{
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```
 시간표 전체 보기
 -
@@ -50,4 +51,5 @@ SUCCESS {"code": 200, [{
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```

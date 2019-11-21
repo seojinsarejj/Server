@@ -19,6 +19,7 @@ SUCCESS {"code": 200, message: "Success"}
 ```
 ```
 FAIL {"code": 500, message:"FAIL"}
+FAIL {"code":406, message: "user is already exists"}
 
 ```
 로그인
@@ -71,4 +72,5 @@ SUCCESS {"code": 200, message: "string"}
 ```
 FAIL {"code": 500, message:"FAIL"}
 FAIL {"code": 404, message:"Not found"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```

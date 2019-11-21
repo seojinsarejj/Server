@@ -30,6 +30,7 @@ SUCCESS {"code": 200, [{
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```
 일정 수정
 -
@@ -56,6 +57,7 @@ SUCCESS {"code": 200, "message": "Success"}
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```
 내 일정 모두 보기
 -
@@ -83,6 +85,7 @@ SUCCESS {"code": 200, [{
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```
 일정 상세보기
 -
@@ -109,6 +112,7 @@ SUCCESS {"code": 200,  {
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```
 일정 삭제
 -
@@ -128,6 +132,7 @@ SUCCESS {"code": 200, "message": "Ok"}
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```
 학교 일정 보기
 -
@@ -155,4 +160,5 @@ SUCCESS {"code": 200, "message": "scheduleList": [{
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
+FAIL {"code": 403,"message": "Forbidden"}
 ```
