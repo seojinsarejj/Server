@@ -19,12 +19,14 @@ POST/schedule/{calendarId}
 ```
 - Response
 ```
-SUCCESS {"code": 200, "message": "Success", [{
-    scheduleContent: String,
-    scheduleTitle: String,
-    startDate: String,
-    endDate: String
-}]}
+SUCCESS {"code": 200, [{
+  "calendarId": 0,
+  "endDate": "string",
+  "scheduleContent": "string",
+  "scheduleId": 0,
+  "scheduleTitle": "string",
+  "startDate": "string"
+}}
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
@@ -50,17 +52,12 @@ PUT/calendar/{scheduleId}
 ```
 - Response
 ```
-SUCCESS {"code": 200, "message": "Success", [{
-    scheduleContent: String,
-    scheduleTitle: String,
-    startDate: String,
-    endDate: String
-}]}
+SUCCESS {"code": 200, "message": "Success"}
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
 ```
-내 일정 보기
+내 일정 모두 보기
 -
 ```
 GET/myCalendar
@@ -74,12 +71,15 @@ GET/myCalendar
 ```
 - Response
 ```
-SUCCESS {"code": 200, "message": "Success", [{
-    scheduleContent: String,
-    scheduleTitle: String,
-    startDate: String,
-    endDate: String
-}]}
+SUCCESS {"code": 200, [{
+    "calendarId": 0,
+    "endDate": "string",
+    "scheduleContent": "string",
+    "scheduleId": 0,
+    "scheduleTitle": "string",
+    "startDate": "string"
+  }]
+}
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
@@ -98,12 +98,14 @@ GET/calendar/{scheduleId}
 ```
 - Response
 ```
-SUCCESS {"code": 200, "message": "Success", [{
-    scheduleContent: String,
-    scheduleTitle: String,
-    startDate: String,
-    endDate: String
-}]}
+SUCCESS {"code": 200,  {
+  "calendarId": Integer,
+  "endDate": "string",
+  "scheduleContent": "string",
+  "scheduleId": Integer,
+  "scheduleTitle": "string",
+  "startDate": "string"
+}}
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
@@ -123,6 +125,33 @@ DELETE/calendar/{scheduleId}
 - Response
 ```
 SUCCESS {"code": 200, "message": "Ok"}
+```
+```
+FAIL {"code": 500,"message":"FAIL"}
+```
+학교 일정 보기
+-
+```
+GET/schoolCalendar
+```
+ - Request
+```
+- header
+{
+    loginUserId: Integer
+}
+```
+- Response
+```
+SUCCESS {"code": 200, "message": "scheduleList": [{
+      "calendarId": Integer,
+      "endDate": "string",
+      "scheduleContent": "string",
+      "scheduleId": Integer,
+      "scheduleTitle": "string",
+      "startDate": "string"
+    }],
+  "schoolCalendarId": Integer"}
 ```
 ```
 FAIL {"code": 500,"message":"FAIL"}
