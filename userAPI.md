@@ -10,7 +10,8 @@ POST/join
 {
     id: String,
     pw: String,
-    classOf: Int
+    classOf: Int,
+    schoolName: String
 }
 ```
 - Response

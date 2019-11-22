@@ -21,7 +21,8 @@ PUT/timetable
 SUCCESS {"code": 200, [{
     "subject": "string",
     "teacher": "string",
-    "timeTableIndex": Integer
+    "timeTableIndex": Integer,
+    "schoolName": "string"
   }]
 }
 ```
@@ -45,7 +46,8 @@ GET/timetable/
 SUCCESS {"code": 200, [{
     "subject": "string",
     "teacher": "string",
-    "timeTableIndex": Integer
+    "timeTableIndex": Integer,
+    "schoolName": "string"
   }]
 }
 ```
